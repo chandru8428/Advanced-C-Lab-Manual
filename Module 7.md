@@ -16,13 +16,50 @@ Else
  
 Program:
 
-//type your code here
+```c
+#include <stdio.h>
+#include <string.h>
 
+struct eligible {
+    int age;
+    char n[50];
+};
+
+int main() {
+    struct eligible e;
+    
+    printf("Enter name: ");
+    scanf("%s", e.n);
+    
+    printf("Enter age: ");
+    scanf("%d", &e.age);
+    
+    if (e.age <= 6) {
+        printf("\nVaccine Eligibility: No\n");
+    } else {
+        printf("\nVaccine Eligibility: Yes\n");
+    }
+    
+    printf("\nDetails:\n");
+    printf("Name: %s\n", e.n);
+    printf("Age: %d\n", e.age);
+    
+    return 0;
+}
+``
 
 Output:
 
-//paste your output here
+```
+Enter name: John
+Enter age: 25
 
+Vaccine Eligibility: Yes
+
+Details:
+Name: John
+Age: 25
+```
 
 Result:
 Thus, the program is verified successfully. 
@@ -44,16 +81,52 @@ Algorithm:
  
 Program:
 
-//type your code here
+```c
+#include <stdio.h>
 
+struct numbers {
+    int a;
+    int b;
+};
+
+struct numbers add(struct numbers n) {
+    struct numbers result;
+    result.a = n.a + n.b;
+    result.b = 0;
+    return result;
+}
+
+int main() {
+    struct numbers n;
+    
+    printf("Enter value for a: ");
+    scanf("%d", &n.a);
+    
+    printf("Enter value for b: ");
+    scanf("%d", &n.b);
+    
+    struct numbers sum = add(n);
+    
+    printf("\nSum = %d\n", sum.a);
+    
+    return 0;
+}
+```
 
 
 
 Output:
 
 
-//paste your output here
+![Experiment 2 Output](screenshot:4)
 
+**Output:**
+```
+Enter value for a: 10
+Enter value for b: 20
+
+Sum = 30
+```
 
 
 
