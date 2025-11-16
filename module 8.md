@@ -1,6 +1,6 @@
 ## EXP NO:6 C PROGRAM PRINT THE LOWERCASE ENGLISH WORD CORRESPONDING TO THE NUMBER
-## NAME : AHAMED JASEER SHA E
-## REG NO: 212224040015
+## NAME : CHANDRU K
+## REG NO: 212224220017
 Aim:
 To write a C program print the lowercase English word corresponding to the number
 Algorithm:
